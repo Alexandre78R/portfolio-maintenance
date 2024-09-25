@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color: #B45852;
+    --secondary-color: #DFBB5F;
+    --scrollHandle-color: #19252E;
+    --scrollHandleHover-color: #162028;
+    --body-color: #01031B;
+    --grey-color: #7F7F7F;
+    --placeholder-color: #A0AEC0;
+    --text-color: #ffffff;
+    --text100-color: #030303;
+    --text200-color: #B2BDCC;
+    --text300-color: #64748b;
+    --textButton-color: white;
+    --success-color: #1C8036;
+    --error-color: #AA2020;
+    --warn-color: #EBCC2A;
+    --info-color: #3B89FF;
+    --footer-color: #050F1A;
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+
+/* .custom-scrollbar::-webkit-scrollbar {
+    display: none;
+    color: red;
+}
+
+.custom-scrollbar::-webkit-scrollbar:hover {
+  display: block;
+  color: red;
+} */
+
+/* Cacher la barre de défilement par défaut */
+.custom-scrollbar {
+  overflow-y: hidden; /* Désactiver le défilement vertical */
+}
+
+.custom-scrollbar:hover {
+  overflow-y: auto; /* Activer le défilement vertical au survol */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0; /* Masquer la barre de défilement */
+  height: 0;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar {
+  width: 2px; /* Afficher la barre de défilement au survol */
+  height: 2px;
+}
+
+
+@keyframes expandOpen {
+    from {
+      opacity: 0;
+      max-height: 0;
+    }
+    to {
+      opacity: 1;
+      max-height: 500px;
+    }
+  }
+  
+  @keyframes expandClose {
+    from {
+      opacity: 1;
+      max-height: 500px;
+    }
+    to {
+      opacity: 0;
+      max-height: 0;
+    }
+  }
+  
+  .expanded-animation-open {
+    animation: expandOpen 1.0s ease-in-out forwards;
+  }
+  
+  .expanded-animation-close {
+    animation: expandClose 1.0s ease-in-out forwards;
+  }
+  
+  .MuiCardContent-root {
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--body-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollHandle-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollHandleHover-color);
+}
+
+.emulator {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* height: calc(100vh - 100px); */
+  /* height: calc(100vh - 20px); */
+  width: 100vh ;
+  overflow: auto;
+  /* padding: 10px; */
+}
+
+.inputTerminal {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  caret-color: var(--primary-color);
+  margin-left: 5px;
+  width: 15vh;
+}
+
+.inputTerminal:focus-visible {
+  outline: none;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.custom-video {
+  width: 310px;
+  height: 170px;
+  object-fit: cover;
+}
+
+.Toastify__toast-container {
+  font-family: Arial, sans-serif;
+}
+
+.Toastify__toast {
+  border-radius: 4px;
+}
+
+.Toastify__toast--success .Toastify__icon {
+  color: var(--success-color);
+}
+
+.Toastify__toast--error .Toastify__icon {
+  color: var(--error-color);
+}
+
+.Toastify__toast--info .Toastify__icon {
+  color: var(--info-color);
+}
+
+.Toastify__toast--warn .Toastify__icon {
+  color: var(--warn-color);
+}
+
+.Toastify__toast--success .Toastify__close-button,
+.Toastify__toast--error .Toastify__close-button,
+.Toastify__toast--info .Toastify__close-button,
+.Toastify__toast--warn .Toastify__close-button {
+  color: var(--text-button-color);
+}
