@@ -12,10 +12,10 @@ const en: Lang = {
   lang1: "FR",
   lang2: "EN",
   navbarTitle: "< Alexandre Renard />",
-  maintenanceH1: "string",
-  maintenanceH2: "string",
-  maintenanceButton: "string",
-  maintenanceFooter: "string",
+  maintenanceH1: "The site is under maintenance",
+  maintenanceH2: "Please come back later.",
+  maintenanceButton: "Refresh the page",
+  maintenanceFooter: "Alexandre Renard. All rights reserved.",
 };
 
 export default en;
