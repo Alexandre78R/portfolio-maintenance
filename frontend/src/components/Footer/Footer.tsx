@@ -10,13 +10,6 @@ const Footer: React.FC = (): React.ReactElement => {
       <div className="container mx-auto flex flex-wrap justify-center">
         <div className="flex flex-col items-center mb-4 md:mb-0  lg:mx-15 flex-1">
           <p className="text-lg font-bold mb-2">{translations.footerTitle}</p>
-          <ul>
-            <li>
-              <a href="#" className="hover:text-secondary">
-                {translations.footerAdmin}
-              </a>
-            </li>
-          </ul>
         </div>
         <div className="flex flex-col items-center mx-4 mb-4 md:mb-0 lg:mx-25 flex-1">
           <p className="text-lg font-bold mb-2">

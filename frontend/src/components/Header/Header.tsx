@@ -36,6 +36,10 @@ const Header: React.FC = (): React.ReactElement => {
           </h2>
           <ButtonCustom text="Rafraîchir la page" onClick={handleRefresh} />
         </div>
+        <footer className="absolute bottom-5 text-text300 text-center w-full">
+          &copy; {new Date().getFullYear()} Alexandre Renard. Tous droits
+          réservés.
+        </footer>
       </div>
     </header>
   );

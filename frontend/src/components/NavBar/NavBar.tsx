@@ -6,6 +6,8 @@ import Box from "@mui/material/Box";
 import Button from "@/components/Button/Button";
 import Modal from "@mui/material/Modal";
 import ToggleButton from "../Button/ToggleButton";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Navbar: React.FC = (): React.ReactElement => {
   const { lang, setLang, translations } = useLang();
@@ -59,6 +61,26 @@ const Navbar: React.FC = (): React.ReactElement => {
         </div>
         <menu className="hidden md:block">
           <ul className="flex space-x-5">
+            <li>
+              <a
+                href="https://github.com/Alexandre78R"
+                target="_blank"
+                rel="alternate"
+                title="Github"
+              >
+                <GitHubIcon className="text-text hover:text-secondary" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/alexandrerenard/"
+                target="_blank"
+                rel="alternate"
+                title="Linkedin"
+              >
+                <LinkedInIcon className="text-text hover:text-secondary" />
+              </a>
+            </li>
             <li>
               <ToggleButton
                 toggleChecked={toggleCheckedLang}

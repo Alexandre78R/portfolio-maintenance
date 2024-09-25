@@ -11,7 +11,6 @@ const Home: React.FC = (): React.ReactElement => {
     <>
       <Seo />
       <Header />
-      <Footer />
     </>
   );
 };
