@@ -31,15 +31,7 @@ jobs:
           context: ./frontend
           file: ./frontend/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/main-frontend-portfolio:latest
-
-      - uses: docker/build-push-action@v4
-        name: Build and push backend
-        with:
-          context: ./backend
-          file: ./backend/Dockerfile
-          push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/main-backend-portfolio:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/main-frontend-portfolio-maintenance:latest
 
   deployment:
     needs: build
