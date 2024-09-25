@@ -29,16 +29,18 @@ const Header: React.FC = (): React.ReactElement => {
         <div className="relative z-20 flex flex-col items-center justify-center">
           <div className="w-40 h-40 relative overflow-hidden"></div>
           <h1 className="text-4xl lg:text-6xl font-bold text-center text-primary relative hover:text-secondary mb-6">
-            Le site est en maintenance
+            {translations.maintenanceH1}
           </h1>
           <h2 className="text-2xl lg:text-4xl font-bold text-center text-text relative hover:text-secondary mb-6">
-            Merci de revenir plus tard.
+            {translations.maintenanceH2}
           </h2>
-          <ButtonCustom text="Rafraîchir la page" onClick={handleRefresh} />
+          <ButtonCustom
+            text={translations.maintenanceButton}
+            onClick={handleRefresh}
+          />
         </div>
         <footer className="absolute bottom-5 text-text300 text-center w-full">
-          &copy; {new Date().getFullYear()} Alexandre Renard. Tous droits
-          réservés.
+          &copy; {new Date().getFullYear()} {translations.maintenanceFooter}
         </footer>
       </div>
     </header>
