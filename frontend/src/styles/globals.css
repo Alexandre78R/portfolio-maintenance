@@ -26,17 +26,6 @@ body {
   background-color: var(--body-color);
 }
 
-
-/* .custom-scrollbar::-webkit-scrollbar {
-    display: none;
-    color: red;
-}
-
-.custom-scrollbar::-webkit-scrollbar:hover {
-  display: block;
-  color: red;
-} */
-
 /* Cacher la barre de défilement par défaut */
 .custom-scrollbar {
   overflow-y: hidden; /* Désactiver le défilement vertical */
@@ -107,40 +96,8 @@ body {
   background: var(--scrollHandleHover-color);
 }
 
-.emulator {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  /* height: calc(100vh - 100px); */
-  /* height: calc(100vh - 20px); */
-  width: 100vh ;
-  overflow: auto;
-  /* padding: 10px; */
-}
-
-.inputTerminal {
-  background-color: var(--body-color);
-  color: var(--text-color);
-  caret-color: var(--primary-color);
-  margin-left: 5px;
-  width: 15vh;
-}
-
 .inputTerminal:focus-visible {
   outline: none;
-}
-
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.custom-video {
-  width: 310px;
-  height: 170px;
-  object-fit: cover;
 }
 
 .Toastify__toast-container {
